@@ -3,7 +3,7 @@ const SearchBar = () => {
         <div>
             <h1>Search</h1>
         </div>
-    );
-};
+    )
+}
 
-export default SearchBar;
+export default SearchBar
