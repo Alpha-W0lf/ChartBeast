@@ -1,3 +1,6 @@
+import Head from 'next';
+import Link from 'next/link';
+
 const Layout = ({children, title = "Crypto Tracker"}) => {
     return (
         <div className="layout">
@@ -6,7 +9,7 @@ const Layout = ({children, title = "Crypto Tracker"}) => {
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className="header">
-                <Link href="/" passHref>
+                <Link href='/' passHref>
                     <a>
                     <svg
                         width='675'
@@ -63,6 +66,9 @@ const Layout = ({children, title = "Crypto Tracker"}) => {
                     </a>
                 </Link>
             </header>
+            <main>{children}</main>
         </div>
-    )
-}
+    );
+};
+
+export default Layout;

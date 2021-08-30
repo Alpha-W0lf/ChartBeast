@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import CoinList from '../components/CoinList';
 import SearchBar from '../components/SearchBar';
+import Layout from '../components/Layout';
 
-export default function Home({filteredCoins}) {
+export default function Home({ filteredCoins }) {
+  console.log(filteredCoins);
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Chart Beast</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,7 +14,7 @@ export default function Home({filteredCoins}) {
 
       <SearchBar type="text" placeholder="Search"/>
       <CoinList filteredCoins={filteredCoins} />
-    </div>
+    </Layout>
   );
 }
 
