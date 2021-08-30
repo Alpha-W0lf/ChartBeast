@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Coins from '../components/Coins';
+import CoinList from '../components/CoinList';
 import SearchBar from '../components/SearchBar';
 
 export default function Home({filteredCoins}) {
@@ -11,7 +11,7 @@ export default function Home({filteredCoins}) {
       </Head>
 
       <SearchBar type="text" placeholder="Search"/>
-      <Coins filteredCoins={filteredCoins} />
+      <CoinList filteredCoins={filteredCoins} />
     </div>
   );
 }
