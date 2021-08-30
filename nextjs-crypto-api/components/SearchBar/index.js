@@ -1,9 +1,11 @@
-const SearchBar = () => {
-    return (
-        <div>
-            <h1>Search</h1>
-        </div>
-    )
-}
+import styles from './Search.module.css';
 
-export default SearchBar
+const SearchBar = ({...rest}) => {
+    return (
+        <div className={styles.coin_search}>
+            <input className={styles.coin_input} {...rest}/>
+        </div>
+    );
+};
+
+export default SearchBar;
