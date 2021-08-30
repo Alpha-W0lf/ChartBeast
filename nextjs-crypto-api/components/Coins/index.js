@@ -11,23 +11,23 @@ const Coins = ({
     id
     }) => {
         return (
-            <div classNme={styles.coin_container}>
-                <div className="coin_row">
-                    <div className="coin">
-                        <img src={image} alt={name} className="coin_img"/>
-                        <h1 className="coin_h1">{name}</h1>
-                        <p className="coin_symbol">{symbol}</p>
+            <div className={styles.coin_container}>
+                <div className={styles.coin_row}>
+                    <div className={styles.coin}>
+                        <img src={image} alt={name} className={styles.coin_img}/>
+                        <h1 className={styles.coin_h1}>{name}</h1>
+                        <p className={styles.coin_symbol}>{symbol}</p>
                     </div>
-                    <div className="coin_data">
-                        <p className="coin_price">${price}</p>
-                        <p className="coin_volume">${volume.toLocaleString()}</p>
+                    <div className={styles.coin_data}>
+                        <p className={styles.coin_price}>${price}</p>
+                        <p className={styles.coin_volume}>${volume.toLocaleString()}</p>
                         {priceChange < 0 ? (
-                            <p className="coin_percent red">{priceChange.toFixed(2)}%</p>
+                            <p className={styles.coin_percent, styles.red}>{priceChange.toFixed(2)}%</p>
                         ) : (
-                            <p className="coin_percent green">{priceChange.toFixed(2)}%</p>
+                            <p className={styles.coin_percent, styles.green}>{priceChange.toFixed(2)}%</p>
                         )}
 
-                        <p className="coin_marketcap">Market Cap: ${marketcap.toLocaleString()}</p>
+                        <p className={styles.coin_marketcap}>Market Cap: ${marketcap.toLocaleString()}</p>
                     </div>
                 </div>
             </div>
