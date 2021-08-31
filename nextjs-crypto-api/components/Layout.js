@@ -15,7 +15,6 @@ const Layout = ({ children, title = 'Chart Beast' }) => {
               width='675'
               height='375'
               viewBox='0 0 675 375'
-              fill='none'
               className='coin_logo'
               ></img>
           </a>
