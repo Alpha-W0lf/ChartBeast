@@ -16,10 +16,10 @@ const Layout = ({ children, title = 'Crypto Tracker' }) => {
               height='375'
               viewBox='0 0 675 375'
               fill='none'
-              xmlns='http://www.w3.org/2000/svg'
+              // xmlns='http://www.w3.org/2000/svg'
               className='coin_logo'
             >
-              <path
+              {/* <path
                 d='M217 125.5L446.5 5L666.5 125.5L446.5 250L217 125.5Z'
                 stroke='#11FFFF'
                 strokeWidth='8'
@@ -61,7 +61,7 @@ const Layout = ({ children, title = 'Crypto Tracker' }) => {
                   <stop stopColor='#06F0FF' />
                   <stop offset='1' stopColor='#00FFFF' />
                 </linearGradient>
-              </defs>
+              </defs> */}
             </svg>
           </a>
         </Link>
